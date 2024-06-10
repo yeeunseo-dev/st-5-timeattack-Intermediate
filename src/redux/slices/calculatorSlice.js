@@ -8,14 +8,11 @@ export const calculatorSlice = createSlice({
     value: 0,
   },
   reducers: {
-    plus: (state) => {
+    plus: (state, payload) => {
       state.value + payload;
     },
-    minus: (state) => {
+    minus: (state, payload) => {
       state.value - payload;
-    },
-    incrementByAmount: (state, action) => {
-      state.value += action.payload;
     },
   },
 });
